@@ -1,0 +1,10 @@
+Options -Indexes
+AddDefaultCharset UTF-8
+<FilesMatch "^(send-config(\.sample)?\.php|README\.md|deploy\.sh)$">
+  Require all denied
+</FilesMatch>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(json)$">
+    Header set Cache-Control "no-store"
+  </FilesMatch>
+</IfModule>
