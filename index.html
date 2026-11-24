@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Работа просто — вакансии курьеров, складов, магазинов, банков и удалённо</title>
+<meta name="description" content="Вакансии крупных компаний и их партнёров: доставка, склады, магазины, банки, удалённый формат. Для соискателей бесплатно.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Работа просто — рекрутинговое агентство">
+<meta property="og:description" content="Работа рядом с домом и удалённо: доставка, склады, магазины, банки. Для соискателей бесплатно.">
+<meta property="og:image" content="https://daviddavidso.github.io/smena-rekrut/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/Geologica.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=20261125045431">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a class="logo" href="#top"><img class="logo__img" src="img/logo.svg" alt="Работа просто — рекрутинговое агентство" width="186" height="38"><span class="vh">, в начало страницы</span></a>
+    <nav aria-label="Основное меню">
+      <ul>
+        <li><a href="#jobs">Вакансии</a></li>
+        <li><a href="#how">Как устроено</a></li>
+        <li><a href="#faq">Вопросы</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--sm hdr__cta" href="#lead">Оставить заявку</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero wrap" id="top" aria-labelledby="hero-h">
+    <div class="hero__grid">
+      <div>
+        <p class="pill"><i aria-hidden="true"></i><span data-s="heroPill">Рекрутинговое агентство</span></p>
+        <h1 id="hero-h"><span data-s="heroTitle">Найдём работу рядом с&nbsp;домом.</span> <em data-s="heroAccent">Просто и&nbsp;бесплатно</em></h1>
+        <p class="hero__lead" data-s="heroLead">Доставка, склады, магазины, банки и удалёнка. Собрали вакансии крупных компаний и их партнёров — выберите подходящую и откликнитесь на сайте компании. С соискателей мы денег не берём.</p>
+        <div class="hero__cta"><a class="btn" href="#jobs">Смотреть вакансии</a><a class="btn btn--soft" href="#lead">Оставить заявку</a></div>
+        <ul class="trust" role="list">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg><b data-s="trust1Title">Бесплатно</b><span data-s="trust1Text">Не берём денег с соискателей — ни за подбор, ни за оформление.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5h6v2M3 12h18"/></svg><b data-s="trust2Title">Крупные компании</b><span data-s="trust2Text">Вакансии сервисов и их партнёров. Отклик — пара минут.</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg><b data-s="trust3Title">На связи</b><span data-s="trust3Text">Не нашли подходящую — оставьте заявку, подберём сами.</span></li>
+        </ul>
+      </div>
+      <div class="open">
+        <div class="open__head"><h2 id="open-h" data-s="openTitle">Сейчас открыто</h2><span class="open__num" id="open-num" aria-hidden="true">—</span></div>
+        <p class="vh" id="open-count"></p>
+        <ul class="open__list" id="open-list" role="list"></ul>
+        <a class="btn" href="#jobs">Все вакансии</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands wrap" aria-labelledby="brands-h">
+    <h2 class="label" id="brands-h">Вакансии компаний</h2>
+    <ul id="brands" role="list"></ul>
+  </section>
+
+  <section class="band" id="jobs" aria-labelledby="jobs-h">
+    <div class="wrap">
+      <div class="sec__head">
+        <div><p class="label" data-s="jobsKicker">Вакансии</p><h2 id="jobs-h" data-s="jobsTitle">Выберите, где удобно работать</h2></div>
+        <p class="sec__lead" data-s="jobsLead">Кнопка «Откликнуться» ведёт на анкету компании — заполнить её можно за пару минут. Не нашли подходящую? Оставьте заявку — подберём.</p>
+      </div>
+      <div class="jobs__bar">
+        <div class="filters" role="group" aria-label="Раздел вакансий" id="filters" hidden></div>
+        <p class="jobs__meta" id="jobs-meta"></p>
+      </div>
+      <p class="vh" role="status" id="jobs-status"></p>
+      <ul class="jobs" id="jobs-list" role="list"><li class="state">Загружаем вакансии…</li></ul>
+      <noscript><p class="state">Чтобы увидеть вакансии, включите JavaScript в браузере — или оставьте заявку ниже, подберём сами.</p></noscript>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="how" aria-labelledby="how-h">
+    <div class="sec__head">
+      <div><p class="label">Как устроено</p><h2 id="how-h" data-s="howTitle">От отклика до первой смены</h2></div>
+      <p class="sec__lead" data-s="howLead">Мы помогаем найти вакансию и разобраться в условиях. Собеседование и оформление — у компании.</p>
+    </div>
+    <ol class="steps" role="list">
+      <li><b data-s="step1Title">Выбираете вакансию</b><span data-s="step1Text">Смотрите город, график и условия в карточке.</span></li>
+      <li><b data-s="step2Title">Откликаетесь</b><span data-s="step2Text">Кнопка в карточке ведёт на анкету компании — пара минут.</span></li>
+      <li><b data-s="step3Title">С вами связываются</b><span data-s="step3Text">Компания перезванивает и приглашает на встречу или обучение.</span></li>
+      <li><b data-s="step4Title">Выход на смену</b><span data-s="step4Text">Оформление — у компании, условия — как в вакансии.</span></li>
+    </ol>
+    <ul class="who" id="who" role="list" aria-label="Кому подойдёт">
+      <li>Без опыта</li><li>Студентам</li><li>Подработка</li><li>Полный день</li><li>Удалённо</li><li>Гражданам ЕАЭС</li>
+    </ul>
+  </section>
+
+  <section class="sec wrap" id="reviews" aria-labelledby="reviews-h" hidden>
+    <div class="sec__head">
+      <div><p class="label" data-s="reviewsKicker">Отзывы</p><h2 id="reviews-h" data-s="reviewsTitle">Кто уже вышел на смену</h2></div>
+      <p class="sec__lead" data-s="reviewsLead">Истории людей, которые нашли вакансию через нас.</p>
+    </div>
+    <ul class="revs" id="revs" role="list" aria-labelledby="reviews-h"></ul>
+  </section>
+
+  <section class="sec wrap" id="lead" aria-labelledby="lead-h">
+    <div class="lead">
+      <div>
+        <h2 id="lead-h" data-s="leadTitle">Не нашли подходящую?</h2>
+        <p data-s="leadText">Оставьте контакт и город — подберём вакансию под ваш график и свяжемся с вами. Это бесплатно.</p>
+        <p id="tg-line" hidden>Удобнее в мессенджере? <a id="tg-inline" href="#lead">Напишите нам в Telegram<span class="vh"> (откроется в новой вкладке)</span></a>.</p>
+      </div>
+      <form class="form" id="lead-form" novalidate>
+        <div class="field"><label for="f-name">Как вас зовут</label><input id="f-name" name="name" autocomplete="given-name" required aria-describedby="e-name"><span class="err" id="e-name"></span></div>
+        <div class="field"><label for="f-contact">Телефон или ник в Telegram</label><input id="f-contact" name="contact" autocomplete="tel" inputmode="text" required aria-describedby="h-contact e-contact"><span class="hint" id="h-contact">Например +7 900 000-00-00 или @nickname</span><span class="err" id="e-contact"></span></div>
+        <div class="field"><label for="f-city">Город и район</label><input id="f-city" name="city" autocomplete="address-level2" required aria-describedby="e-city"><span class="err" id="e-city"></span></div>
+        <div class="field"><label for="f-kind">Какая работа интересует</label><select id="f-kind" name="kind"><option>Любая</option><option>Курьеры</option><option>Склады и сборка</option><option>Магазины</option><option>Банки и финансы</option><option>Удалённо и онлайн</option><option>Мастера</option></select></div>
+        <div class="field full"><label for="f-comment">Комментарий <span class="hint">(необязательно)</span></label><textarea id="f-comment" name="comment" maxlength="500"></textarea></div>
+        <div class="hp" aria-hidden="true" inert><label for="f-site">Не заполняйте это поле</label><input id="f-site" name="site" tabindex="-1" autocomplete="off"></div>
+        <div class="field full"><div class="check"><input type="checkbox" id="f-consent" name="consent" aria-required="true" aria-describedby="e-consent"><label for="f-consent">Согласен на обработку персональных данных по <a href="privacy.html" target="_blank" rel="noopener">политике конфиденциальности<span class="vh"> (откроется в новой вкладке)</span></a></label></div><span class="err" id="e-consent"></span></div>
+        <p class="form__note full" id="preview-note" hidden>Это превью сайта: заявки начнут приходить после переноса на ваш домен.</p>
+        <div class="full"><button class="btn" type="submit">Отправить заявку</button></div>
+        <p class="form__status full" role="status" id="form-status"></p>
+        <p class="vh" role="status" id="field-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec wrap faq" id="faq" aria-labelledby="faq-h">
+    <div class="sec__head"><div><p class="label">Вопросы</p><h2 id="faq-h">Частые вопросы</h2></div></div>
+    <details data-faq="1"><summary>Это правда бесплатно?</summary><p>Да. Вознаграждение за подбор нам платит компания. С соискателей не берём денег ни за что: ни за анкету, ни за обучение, ни за «место в очереди».</p></details>
+    <details data-faq="2"><summary>Оформление официальное?</summary><p>Зависит от вакансии: где-то трудовой договор по ТК РФ, где-то самозанятость или договор. Это написано в карточке каждой вакансии.</p></details>
+    <details data-faq="3"><summary>Нужен опыт?</summary><p>Для большинства вакансий — нет: компании обучают сами, а в сортировочном центре Яндекс Маркета стажировка ещё и оплачивается.</p></details>
+    <details data-faq="4"><summary>Можно без гражданства РФ?</summary><p>Многие вакансии открыты для граждан ЕАЭС: Беларуси, Казахстана, Армении и Кыргызстана. Для сортировочного центра нужно законное основание находиться в РФ — виза, РВП, ВНЖ или ТЭКС. Подробности — в карточке вакансии.</p></details>
+    <details data-faq="5"><summary>Сколько ждать ответа после отклика?</summary><p>Обычно компания связывается в течение нескольких дней. Если ответа долго нет — оставьте заявку на этой странице, подскажем.</p></details>
+    <details data-faq="6" hidden><summary></summary><p></p></details>
+    <div class="warn" id="warn" role="note"><h3 data-s="warnTitle">Осторожно, мошенники</h3><p data-s="warnText">Мы никогда не просим предоплату, данные карты или коды из СМС. Если кто-то делает это от нашего имени — прекратите разговор.</p></div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr__grid">
+    <div class="ftr__brand"><img src="img/logo-mark.svg" alt="" width="30" height="32"><b>Рекрутинговое агентство «<span data-s="brand">Работа просто</span>»</b></div>
+    <div>
+      <p data-s="legal" hidden></p>
+      <p><span data-s="footerNote">Вакансии размещены по данным компаний и их партнёров; условия и решение о приёме — за компанией.</span> <a href="privacy.html">Политика конфиденциальности</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>if(typeof OFFERS==="undefined"){document.write('<script src="data.js?v=20261125045431"><\/script>');}</script>
+<script src="js/app.js?v=20261125045431"></script>
+</body>
+</html>
